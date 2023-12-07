@@ -38,11 +38,9 @@ public class MAdapter extends RecyclerView.Adapter<MAdapter.MyViewHolder>{
         Model1 user = list.get(position);
         holder.name.setText(user.getNAME());
         holder.designation.setText("(" + user.getDESIGNATION() + ")");
-        holder.department.setText(user.getDEPARTMENT());
         holder.address.setText(user.getADDRESS());
         holder.email.setText(user.getEMAIL());
         holder.phone.setText(user.getLANDLINE());
-        holder.mobile.setText(user.getMOBILE());
     }
 
     @Override

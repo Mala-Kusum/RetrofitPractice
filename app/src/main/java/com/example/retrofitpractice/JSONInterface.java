@@ -13,7 +13,7 @@ public interface JSONInterface {
     @GET("users/{id}/albums")
     Call<List<Albums>> getAlbums(@Path("id") int i);
 
-    @GET()
+    @GET("get-corporate-office-staff")
     Call<List<Model1>> getModel1();
 
 }

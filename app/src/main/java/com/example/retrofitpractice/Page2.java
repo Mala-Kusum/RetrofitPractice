@@ -5,8 +5,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +34,7 @@ public class Page2 extends AppCompatActivity {
         recycler.setHasFixedSize(true);
         recycler.setLayoutManager(new LinearLayoutManager(this));
         Retrofit r = new Retrofit.Builder().baseUrl("http://35.200.224.164:9000/api/detailsOfStaff/").addConverterFactory(GsonConverterFactory.create()).build();
+
         JSONInterface i = r.create(JSONInterface.class);
         Call<List<Model1>> c = i.getModel1();
         c.enqueue(new Callback<List<Model1>>() {
@@ -48,7 +54,7 @@ public class Page2 extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<List<Model1>> call, Throwable t1) {
-                Toast.makeText(Page2.this, "Code: "+ t1.getMessage(),Toast.LENGTH_SHORT).show();
+                Log.d("onFailure: ",t1.getMessage());
             }
         });
     }
