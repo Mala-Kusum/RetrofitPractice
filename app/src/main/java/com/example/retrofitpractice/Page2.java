@@ -39,8 +39,6 @@ public class Page2 extends AppCompatActivity {
                 }
                 else {
                     List<Model1> l = response.body();
-                    String d;
-                    d="";
                     for(Model1 m:l){
                         list.add(m);
                         adapt.notifyDataSetChanged();

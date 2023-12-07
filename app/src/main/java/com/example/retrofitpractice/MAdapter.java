@@ -51,7 +51,7 @@ public class MAdapter extends RecyclerView.Adapter<MAdapter.MyViewHolder>{
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView name,designation,department,address,phone,mobile,email,button;
+        TextView name,designation,department,address,phone,mobile,email;
         LinearLayout card;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
