@@ -1,7 +1,7 @@
 package com.example.retrofitpractice;
 import com.google.gson.annotations.SerializedName;
 
-import  retrofit2.*;
+import java.util.List;
 
 public class Albums {
     @SerializedName("userId")
@@ -19,5 +19,17 @@ public class Albums {
 
     public String getTitle() {
         return title;
+    }
+
+    public static class Model1 {
+        List<StaffDetails> staffDetails;
+
+        public List<StaffDetails> getStaffDetails() {
+            return staffDetails;
+        }
+
+        public void setStaffDetails(List<StaffDetails> staffDetails) {
+            this.staffDetails = staffDetails;
+        }
     }
 }

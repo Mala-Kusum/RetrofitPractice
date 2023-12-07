@@ -14,15 +14,15 @@ import java.util.ArrayList;
 
 public class MAdapter extends RecyclerView.Adapter<MAdapter.MyViewHolder>{
     Context context;
-    ArrayList<Model1> list;
+    ArrayList<StaffDetails> list;
     String DocID;
     String Type;
     String email;
-    public MAdapter(Context context, ArrayList<Model1> list) {
+    public MAdapter(Context context, ArrayList<StaffDetails> list) {
         this.context = context;
         this.list = list;
     }
-    public void filterList(ArrayList<Model1> filterlist) {
+    public void filterList(ArrayList<StaffDetails> filterlist) {
         list = filterlist;
     }
     @NonNull
@@ -35,7 +35,7 @@ public class MAdapter extends RecyclerView.Adapter<MAdapter.MyViewHolder>{
     }
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Model1 user = list.get(position);
+        StaffDetails user = list.get(position);
         holder.name.setText(user.getNAME());
         holder.designation.setText("(" + user.getDESIGNATION() + ")");
         holder.address.setText(user.getADDRESS());

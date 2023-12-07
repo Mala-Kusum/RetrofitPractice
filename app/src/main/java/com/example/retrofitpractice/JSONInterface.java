@@ -14,6 +14,6 @@ public interface JSONInterface {
     Call<List<Albums>> getAlbums(@Path("id") int i);
 
     @GET("get-corporate-office-staff")
-    Call<List<Model1>> getModel1();
+    Call<Model1> getModel1();
 
 }
