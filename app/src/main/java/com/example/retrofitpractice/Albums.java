@@ -22,13 +22,13 @@ public class Albums {
     }
 
     public static class Model1 {
-        List<StaffDetails> staffDetails;
+        List<StaffData> staffDetails;
 
-        public List<StaffDetails> getStaffDetails() {
+        public List<StaffData> getStaffDetails() {
             return staffDetails;
         }
 
-        public void setStaffDetails(List<StaffDetails> staffDetails) {
+        public void setStaffDetails(List<StaffData> staffDetails) {
             this.staffDetails = staffDetails;
         }
     }

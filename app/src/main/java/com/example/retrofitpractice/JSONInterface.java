@@ -15,5 +15,7 @@ public interface JSONInterface {
 
     @GET("get-corporate-office-staff")
     Call<Model1> getModel1();
+    @GET("Corporate-Office-Staff-Works-Under")
+    Call<DObj> getDesignation();
 
 }

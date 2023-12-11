@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RetrofitPractice</string>
+    <string name="all_search">All Search</string>
 </resources>

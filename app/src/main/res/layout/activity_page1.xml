@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp"
+    tools:context="com.example.retrofitpractice.Page1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/allsearch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="5dp"
+            android:textColor="#131D51"
+            android:textSize="15sp"
+            android:text="@string/all_search"
+            android:backgroundTint="#95C1E4"
+            />
+        <!--        android:visibility="gone"-->
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone1"
+            app:rippleColor="@color/white"
+            android:clickable="true"
+            android:forceHasOverlappingRendering="true"
+            android:backgroundTint="#E8A0BF"
+            android:elevation="10dp"
+            app:fabSize="normal"
+            android:src="@android:drawable/stat_sys_phone_call"
+            android:tooltipText="Send feedback/Queries"
+            android:focusable="true" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:forceHasOverlappingRendering="true"
+            android:id="@+id/message"
+            app:rippleColor="@color/white"
+            android:backgroundTint="#E8A0BF"
+            app:fabSize="normal"
+            android:src="@android:drawable/sym_action_email"
+            android:tooltipText="Send Feedback/Queries"
+            android:focusable="true" />
+    </LinearLayout>
+
+</RelativeLayout>
